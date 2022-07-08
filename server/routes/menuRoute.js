@@ -2,8 +2,8 @@ const express = require("express")
 const router = express.Router()
 const controller = require('../controllers/menuControllers')
 
-router.route("/").get(controller.getCategories).post(controller.addCategory)
-router.route("/:id").put(controller.updateCategory).delete(controller.deleteCategory)
+router.route("/").get(controller.getItems).post(controller.addItem)
+router.route("/:id").put(controller.updateItem).delete(controller.deleteItem)
 
 /////
 
